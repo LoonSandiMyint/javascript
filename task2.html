@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function manage(text){
+            var btn=document.getElementById('submit');
+            if(text.value!='')
+            {
+                btn.disabled=false;
+            }
+            else{
+                btn.disabled=true;
+            }
+        }
+    </script>
+    <title>My Website</title>
+</head>
+<body>
+    <form id="#form">
+        <input type="text" id="text" onkeyup="manage(this)" placeholder="Add to do list"/>
+        <input type="submit" id="submit" disabled placeholder="submit"/>
+    </form>
+   
+</body>
+</html>
